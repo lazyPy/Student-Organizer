@@ -1,0 +1,9 @@
+<a class="btn btn-sm btn-primary" href="{% url 'create-topic' %}">Create Topic</a>
+
+<ul>
+    {% for topic in topics %}
+    {% if request.user.year == topic.year and request.user.course == topic.course and request.user.section == topic.section %}
+    <li><a href="{% url 'topic' topic.id %}?q={{topic}}">{{topic.name}}</a></li>
+    {% endif %}
+    {% endfor %}
+</ul>

@@ -1,0 +1,55 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="value" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E302" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N802" />
+          <option value="N803" />
+          <option value="N806" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="RMSapp.models.Course.objects" />
+          <option value="RMSapp.models.Student.objects" />
+          <option value="RMSapp.models.Faculty.objects" />
+          <option value="django.db.models.fields.CharField.__add__" />
+          <option value="RMSapp.views.editFaculty" />
+          <option value="RMSapp.views.updateFaculty" />
+          <option value="RMSapp.views.deleteFaculty" />
+          <option value="RMSapp.views.updateSchedule" />
+          <option value="RMSapp.views.viewSchedule" />
+          <option value="RMSapp.views.editSchedule" />
+          <option value="RMSapp.views.deleteSchedule" />
+          <option value="RMSapp.models.Schedule.objects" />
+          <option value="Record_Management_App.models.Subject.objects" />
+          <option value="Record_Management_App.models.Teacher.objects" />
+          <option value="Record_Management_App.models.Student.objects" />
+          <option value="Student_Management_App.models.Teacher.*" />
+          <option value="Student_Management_App.models.Subject.objects" />
+          <option value="Student_Management_App.models.Student.objects" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

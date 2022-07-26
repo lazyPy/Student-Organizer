@@ -1,0 +1,9 @@
+{% for classmate in classmates %}
+{% if request.user.year == classmate.year and request.user.course == classmate.course and request.user.section == classmate.section %}
+<div class="text-dark">
+    {% if request.user.username != classmate.username %}
+    <a href="{% url 'profile' classmate.id %}">{{classmate.username}}</a>
+    {% endif %}
+</div>
+{% endif %}
+{% endfor %}

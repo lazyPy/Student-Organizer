@@ -1,0 +1,18 @@
+{% for message in topic_messages %}
+<div>
+    {% if message.user == request.user %}
+    <small class="btn btn-primary">{{message.user}}</small>
+    <small>{{message.body}}</small>
+    <hr>
+    {% else %}
+    <small>{{message.user}}</small>
+    <small>{{message.body}}</small>
+    <hr>
+    {% endif %}
+</div>
+{% endfor %}
+
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="body" placeholder="Type message...">
+</form>

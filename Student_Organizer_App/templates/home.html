@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-3">
+        <h6>Topic</h6>
+        {% include 'topic.html' %}
+    </div>
+
+    <div class="col-6">
+        {% if request.get_full_path == "/" %}
+        {% include 'user-home.html' %}
+        {% else %}
+        <h6>Conversation</h6>
+        {% include 'topic-conversation.html' %}
+        {% endif %}
+    </div>
+
+    <div class="col-3">
+        <h6>Classmate</h6>
+        {% include 'classmate.html' %}
+    </div>
+</div>
+
+{% endblock %}
